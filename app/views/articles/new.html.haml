@@ -1,0 +1,10 @@
+%h1 New Article
+= form_with scope: :article, url: articles_path, local: true do |form|
+  %div
+    = form.label :title
+    = form.text_field :title
+  %div
+    = form.label :text
+    = form.text_area :text
+  %div
+    = form.submit
