@@ -1,5 +1,10 @@
+%hr
+= link_to 'Create new article', new_article_path
+%hr
+%h3 Articles
 - @articles.each do |article|
-  %div
+  %details
+    %summary= article.title
     %p
       %strong Title:
       = article.title
